@@ -1,0 +1,102 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#whiteWindow{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    z-index: 1;
+    visibility: hidden;
+}
+
+#writePost{
+    visibility: hidden;
+    position: fixed;
+    border: 1px solid;
+    width: 500px;
+    height: 520px;
+    left: 50%;
+    top: 50%;
+    margin-top: -250px;
+    margin-left: -250px;
+    z-index: 1;
+}
+
+#writeTitle {
+    width: 400px;
+    margin-top: 50px;
+    text-align: center;
+    height: 40px;
+    font-size: 30px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#writeContent{
+    width: 80%;
+    height: 300px;
+    font-size: 25px;
+    position: relative;
+    left: 50%;
+    margin-top: 20px;
+    transform: translateX(-50%);
+    resize: none;
+    padding: 10px 0px 0px 10px;
+}
+
+#writeBtn{
+    margin-top: 20px;
+    width: 200px;
+    height: 40px;
+    font-size: 20px;
+    background-color: white;
+    margin-left: 260px;
+}
+
+#writePostBtn{
+    margin-top: 30px;
+    width: 300px;
+    height: 60px;
+    font-size: 30px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#viewPost{
+    width: 700px;
+    height: 600px;
+    overflow-y: scroll;
+    margin-top: 40px;
+    position:relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.postDiv{
+    width: 90%;
+    height: 60px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    border: 1px solid;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.postDiv:first-child{
+    margin-top: 30px;
+}
+
+.postTitle{
+    font-size: 20px;
+    margin: auto;
+}

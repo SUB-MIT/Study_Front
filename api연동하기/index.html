@@ -4,9 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
     <title>Document</title>
 </head>
 <body>
-    
+    <div id="whiteWindow"></div>
+    <button id="writePostBtn">게시물 작성</button>
+
+    <div id="viewPost">
+        
+    </div>
+
+    <modal id="writePost">
+        <div>
+            <input type="text" id="writeTitle" placeholder="제목을 입력해주세요">
+            <textarea id="writeContent" placeholder="내용을 입력해주세요"></textarea>
+            <button id="writeBtn">게시물 작성</button>
+        </div>
+    </modal>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js"></script>
+    <script src="./index.js"></script>
 </body>
 </html>
