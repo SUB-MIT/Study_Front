@@ -6,11 +6,16 @@ let viewPost = document.getElementById("viewPost");
 let writeBtn = document.getElementById("writeBtn");
 let writeContent = document.getElementById("writeContent");
 let writeTitle = document.getElementById("writeTitle");
+let postDetail = document.getElementById("postDetail");
+let postDetailTitle = document.getElementById("postViewTitle");
+let postDetailContent = document.getElementById("postViewContent");
+let postDetailCreateAt = document.getElementById("postViewCreateAt");
 let blank_pattern = /^\s+|\s+$/g;
 
 whiteWindow.addEventListener("click", () => {
     writePost.style.visibility = "hidden";
     whiteWindow.style.visibility = "hidden";
+    postDetail.style.visibility = "hidden";
     writeTitle.value="";
     writeContent.value="";
 });
@@ -75,6 +80,11 @@ window.onload = ()=> {
                     url: baseURL+'/post/'+num,
                 }).then((res) => {
                     console.log(res);
+                    whiteWindow.style.visibility = "visible";
+                    postDetail.style.visibility= "visible";
+                    postDetailTitle.innerHTML = res.data.title;
+                    postDetailContent.innerHTML = res.data.content;
+                    postDetailCreateAt.innerHTML = res.data.createdAt;
                 }).catch((error)=>{
                     console.error(error);
                 })
