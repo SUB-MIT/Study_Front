@@ -2,10 +2,12 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="Mafia main.css".css>
+    <link rel="stylesheet" href="mafia.css">
     <meta charset="UTF-8">
     <title>Mafia</title>
 </head>
 <body>
+    <div class="black"></div>
     <div class="mainPage">
         <div class="mainImg">
             <img src="./Img/mafia-42_banner.jpg" class="bcakImg">
@@ -17,5 +19,20 @@
             <h3>마피아 역할 정하기</h3>
         </div>
     </div>
+
+    <modal>
+        <div class="card">
+            <img src="./Img/Mafia.png" class="chaImg"></img>
+            <div class="chaSpan">
+                <span>마피아</span>
+                <span>[처형] 밤마다 한 명의 플레이어를</br>죽일 수 있다.</span>
+            </div>
+            <div class="center">
+                <button id="hideBtn">숨기기</button>
+            </div>
+        </div>
+    </modal>
+
+    <script src="Mafia.js"></script>
 </body>
 </html>
