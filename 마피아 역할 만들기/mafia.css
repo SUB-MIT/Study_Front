@@ -1,0 +1,56 @@
+html {
+    background-color: black;
+}
+
+body {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.chaImg {
+    width: 300px;
+    height: 300px;
+    border: 9px solid #AC0003;
+}
+
+.chaSpan {
+    width: 300px;
+    height: 100px;
+    border: 9px solid #AC0003;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+span:first-child {
+    font-size: 25px;
+}
+
+span {
+    font-size: large;
+    text-align: center;
+    color: white;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#hideBtn {
+    font-size: large;
+    background-color: black;
+    margin-top: 50px;
+    border: 3px solid #AC0003;
+    color: #AC0003;
+    width: 250px;
+    height: 40px;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
