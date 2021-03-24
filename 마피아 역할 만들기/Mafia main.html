@@ -3,6 +3,7 @@
 <head>
     <link rel="stylesheet" href="Mafia main.css".css>
     <link rel="stylesheet" href="mafia.css">
+    <link rel="stylesheet" href="citizen.css">
     <meta charset="UTF-8">
     <title>Mafia</title>
 </head>
@@ -20,12 +21,51 @@
         </div>
     </div>
 
-    <modal>
-        <div class="card">
-            <img src="./Img/Mafia.png" class="chaImg"></img>
-            <div class="chaSpan">
+    <modal> 
+                <div class="mafiaCard" id="mafiaCard">
+            <img src="./Img/Mafia.png" class="mafiaChaImg"></img>
+            <div class="mafiaChaSpan">
                 <span>마피아</span>
                 <span>[처형] 밤마다 한 명의 플레이어를</br>죽일 수 있다.</span>
+            </div>
+            <div class="mafiaCenter">
+                <button class="hideBtn" id="hideBtn">숨기기</button>
+            </div>
+        </div>
+    </modal>
+
+    <modal>
+        <div class="card" id="policeCard">
+            <img src="./Img/Police.png" class="chaImg"></img>
+            <div class="chaSpan">
+                <span>경찰</span>
+                <span>[수색] 밤이 되면 플레이어 한 명을 선택해 마피아 여부를 알아낼 수 있다.</span>
+            </div>
+            <div class="center">
+                <button id="hideBtn">숨기기</button>
+            </div>
+        </div>
+    </modal>
+
+    <modal>
+        <div class="card" id="doctorCard">
+            <img src="./Img/Doctor.png" class="chaImg"></img>
+            <div class="chaSpan">
+                <span>의사</span>
+                <span>[치료] 밤마다 플레이어 한 명을 마피아의 공격으로부터 치료한다.</span>
+            </div>
+            <div class="center">
+                <button id="hideBtn">숨기기</button>
+            </div>
+        </div>
+    </modal>
+
+    <modal>
+        <div class="card" id="citizenCard">
+            <img src="./Img/Citizen.png" class="chaImg"></img>
+            <div class="chaSpan">
+                <span>시민</span>
+                <span>[정의] 마피아 팀을 모두 제거할 경우, 승리한다.</span>
             </div>
             <div class="center">
                 <button id="hideBtn">숨기기</button>
