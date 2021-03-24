@@ -43,7 +43,7 @@ span {
 
 }
 
-#hideBtn {
+.hideBtn {
     font-size: large;
     background-color: black;
     margin-top: 50px;
