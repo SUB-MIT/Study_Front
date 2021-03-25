@@ -1,4 +1,4 @@
-let array = [5, 5, 0, 1, 2, 2, 2, 2, 2, 2];
+let array = [5, 5, 0, 1, 2, 2, 2, 2, 2];
 let shuffle = [];
 let cnt = 0;
 let card = document.getElementsByClassName('card');
